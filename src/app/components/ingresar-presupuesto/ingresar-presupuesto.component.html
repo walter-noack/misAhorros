@@ -1,0 +1,41 @@
+<div class="row mt-5">
+    <div class="col-lg-6" id="col">
+        <h2 class="text-center fontTitle">Ingresa tu Presupuesto</h2>
+
+        <div class="parent">
+            <div class="div1">
+                <div class="card">
+                    <div class="card-body">
+                        <div *ngIf="cantidadIncorrecta" class="text-center mb-3">
+                            <span class="badge bg-danger textError"> EL PRESUPUESTO DEBE SER MAYOR A CERO</span>
+                        </div>
+
+                        <input type="number" [(ngModel)]="cantidad" class="form-control form-control-lg"
+                            placeholder="Ingrese su presupuesto..">
+                        <button class="btn btn-secondary btn-lg btn-block mt-2" (click)="agregar()"> ACEPTAR </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="div2">
+                <div class="card" id="card-2">
+                    <div class="card-body">
+                        <p class="text">
+                            Esta es una calculadora de presupuesto. <br><br>
+                            Ingresa tu presupuesto inicial, y despues podrás incorporar los gastos que tienes
+                            proyectados, los que se descontarán del presupuesto inicial.<br>
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</div>
